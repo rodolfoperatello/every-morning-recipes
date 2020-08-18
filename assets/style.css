@@ -4,10 +4,16 @@
 
 a {
   text-decoration: none;
-  display: block;
+  text-decoration-color: transparent;
 }
 
-ul, p, h1 {
+ul {
+  list-style-type: none;
+}
+
+ul,
+p,
+h1 {
   margin: 0;
   padding: 0;
 }
@@ -21,47 +27,46 @@ body {
   overflow-x: hidden;
 }
 
-
 .header {
   border-radius: 8px;
   height: 18.5rem;
-  padding: 4rem 0 4rem 4.5rem; 
 }
 
 .wrapper {
-  background-image: url("./images/breakfast.jpg");
+  background: linear-gradient(rgba(119, 98, 178, 0.6), rgba(119, 98, 178, 0.6)),
+    url("./images/breakfast.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
-
-h1 {
+.header__info {
   display: inline-block;
+  margin: 4rem 0 0 4.5rem;
 }
 
-
-.header__link__text {
+.header__title__text {
   display: inline-block;
-  width: 14.5625rem;  
+  width: 14.5625rem;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 3rem;
   line-height: 3.5rem;
   text-transform: uppercase;
+}
+
+.header__title__link {
   color: #fff;
 }
 
-
-.media {    
+.media {
   margin-top: 0.6875rem;
-  display: flex;  
+  display: flex;
   align-items: center;
 }
 
-.media__text{  
-  margin-right: 18px;  
+.media__text {
+  margin-right: 18px;
   font-family: "Cabin", sans-serif;
   font-size: 1rem;
   line-height: 1.1875rem;
@@ -70,20 +75,19 @@ h1 {
   color: #fff;
 }
 
-
-.media-list{ 
-  list-style-type: none;  
+.media-list {
   display: flex;
 }
 
-.media-list__item{
-  margin-right: 22px;  
+.media-list__item {
+  margin-right: 22px;
   width: 1.75rem;
 }
 
-.media-list__link__img{
-  width: 100%;
-  
+.media-list__link {
+  display: block;
 }
 
-
+.media-list__link__img {
+  width: 100%;
+}
