@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul, p, h1 {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   font-size: 100%;
@@ -11,22 +21,30 @@ body {
   overflow-x: hidden;
 }
 
+
 .header {
   border-radius: 8px;
   height: 18.5rem;
+  padding: 4rem 0 4rem 4.5rem; 
+}
+
+.wrapper {
   background-image: url("./images/breakfast.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.header__info {
-  margin: 0;
-  padding: 0;
+
+
+h1 {
+  display: inline-block;
 }
 
-.header__info__text {
-  margin: 0;
+
+.header__link__text {
+  display: inline-block;
+  width: 14.5625rem;  
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 3rem;
@@ -35,10 +53,37 @@ body {
   color: #fff;
 }
 
-.media-list {
-  list-style: none;
+
+.media {    
+  margin-top: 0.6875rem;
+  display: flex;  
+  align-items: center;
 }
 
-.media-list__item {
-  width: 50px;
+.media__text{  
+  margin-right: 18px;  
+  font-family: "Cabin", sans-serif;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
 }
+
+
+.media-list{ 
+  list-style-type: none;  
+  display: flex;
+}
+
+.media-list__item{
+  margin-right: 22px;  
+  width: 1.75rem;
+}
+
+.media-list__link__img{
+  width: 100%;
+  
+}
+
+
