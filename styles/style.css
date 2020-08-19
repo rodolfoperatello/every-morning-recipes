@@ -11,17 +11,21 @@ html,
 body {
   font-size: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
-}
-
-.header {
-  border-radius: 8px;
-  padding: 4rem 0 1.5625rem 4.5rem;
+  background-color: #e5e5e5;
 }
 
 .wrapper {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.header {
+  margin-top: 1.75rem;
+  border-radius: 8px;
+  padding: 4rem 0 1.5625rem 4.5rem;
   background: linear-gradient(rgba(119, 98, 178, 0.6), rgba(119, 98, 178, 0.6)),
     url("../assets/images/breakfast.jpg");
   background-position: center;
@@ -29,51 +33,47 @@ body {
   background-size: cover;
 }
 
-.header__title {
-  margin: 0;
-}
-
 .header__title__text {
-  color: #fff;
   margin: 0;
+  color: #fff;
   width: 14.5625rem;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 3rem;
-  line-height: 3.5rem;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
-.media {
-  margin: 0.6875rem 0 0 0.1875rem;
+.social-media {
+  margin-top: 0.6875rem;
   display: flex;
   align-items: center;
 }
 
-.media__text {
-  margin: 0 18px 0 0;
+.social-media__text {
+  margin: 0 1.125rem 0 0.1875rem;
   font-family: "Cabin", sans-serif;
   font-size: 1rem;
-  line-height: 1.1875rem;
+  line-height: 1.2;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
 }
 
-.media-list {
+.social-media__list {
   display: flex;
   list-style-type: none;
 }
 
-.media-list__item {
-  margin-right: 22px;
+.social-media__list__item {
+  margin-right: 1.375rem;
   width: 1.75rem;
 }
 
-.media-list__link {
+.social-media__list__link {
   display: block;
 }
 
-.media-list__link__img {
+.social-media-list__img {
   width: 100%;
 }
