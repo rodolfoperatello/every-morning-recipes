@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #e5e5e5;
+  background-color: #e1e1cf;
 }
 
 .wrapper {
@@ -76,4 +76,98 @@ body {
 
 .social-media-list__img {
   width: 100%;
+}
+
+.recipe-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.875rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  padding: 8.625rem 0 1rem 1.625rem;
+  border-radius: 8px;
+}
+
+.card:first-child {
+  background: linear-gradient(
+      rgba(225, 225, 207, 0.6),
+      rgba(225, 225, 207, 0.6)
+    ),
+    url("../assets/images/morning-omelet.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(rgba(185, 82, 59, 0.6), rgba(185, 82, 59, 0.6)),
+    url("../assets/images/daria-nepriakhina--0gya0UbwPs-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__title {
+  margin: 0;
+  width: 17.9375rem;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.card__info {
+  display: flex;
+  margin: 0.5rem 0 0 0.4375rem;
+}
+
+.autor__img {
+  width: 3.125rem;
+  border-radius: 50%;
+}
+
+.autor__name {
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  margin-left: 0.6875rem;
+}
+
+.autor__name--white {
+  color: #fff;
+}
+
+.small-card {
+  margin: 1.625rem 0 1.75rem 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.875rem;
+}
+
+.small-card__item {
+  display: flex;
+}
+
+.small-card__img {
+  width: 9.375rem;
+  border-radius: 8px 0 0 8px;
+}
+
+.small-card__info {
+  background-color: #fff;
+  border-radius: 0 8px 8px 0;
+  padding: 0.9375rem 0 0.875rem 0.875rem;
+  width: 100%;
+}
+
+.small-card__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.75;
 }
