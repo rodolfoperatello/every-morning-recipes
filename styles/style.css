@@ -78,34 +78,73 @@ body {
   width: 100%;
 }
 
-.recipe-list {
+.card-highlight-list {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(485px, 1fr));
   grid-gap: 1.875rem;
   margin-top: 1.5rem;
 }
 
-.card {
+.card-highlight {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;  
+  justify-content: flex-end;
   padding: 8.625rem 10.75rem 1rem 1.625rem;
   border-radius: 8px;
-  background-color: rgba(119, 98, 178, 0.4);
+  position: relative;
+  overflow: hidden;
 }
 
-.card__info {  
-  display: flex;  
+.overlay--primary::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: #d7d762;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.6;
 }
 
-.card__title {
+.overlay--secondary::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: #b9523b;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.card-highlight__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.autor__info {
+  display: flex;
+  z-index: 2;
+}
+
+.card-highlight__title {
   margin: 0;
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 2.25rem;
   line-height: 1.2;
+  z-index: 2;
 }
 
 .autor__img {
@@ -125,39 +164,44 @@ body {
   color: #fff;
 }
 
-.small-card {
+.card-list {
   margin: 1.625rem 0 1.75rem 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(485px, 1fr));
   grid-gap: 1.875rem;
 }
 
-.small-card__item {
+.card__item {
   display: flex;
 }
 
-.small-card__img {
-  width: 9.375rem;
+.card__recipe {
+  width: 12.5rem;
   height: 9.375rem;
-  border-radius: 8px 0 0 8px;
 }
 
-.small-card__info {
+.card__recipe__img {
+  border-radius: 8px 0 0 8px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
   border-radius: 0 8px 8px 0;
   padding: 0.9375rem 0 0.875rem 0.875rem;
-  width: 100%;  
+  width: 100%;
 }
 
-.small-card__title {
+.card__title {
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.2;
 }
-
