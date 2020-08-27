@@ -130,6 +130,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
+  object-fit: cover;
 }
 
 .autor__info {
@@ -176,12 +177,12 @@ body {
   display: flex;
 }
 
-.card__recipe {
+.card__wrapper {
   width: 12.5rem;
   height: 9.375rem;
 }
 
-.card__recipe__img {
+.card__wrapper__img {
   border-radius: 8px 0 0 8px;
   object-fit: cover;
   width: 100%;
