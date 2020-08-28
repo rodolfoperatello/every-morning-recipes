@@ -27,13 +27,13 @@ body {
   border-radius: 8px;
   padding: 4rem 0 1.5625rem 4.5rem;
   background: linear-gradient(rgba(119, 98, 178, 0.6), rgba(119, 98, 178, 0.6)),
-    url("../assets/images/breakfast.jpg");
+    url("../assets/images/header-cover.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.header__title__text {
+.header__title {
   margin: 0;
   color: #fff;
   width: 14.5625rem;
