@@ -18,6 +18,12 @@ body {
   font-family: "Cabin", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 70%;
@@ -38,7 +44,6 @@ body {
   margin: 0;
   color: #fff;
   width: 14.5625rem;
-  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 3rem;
   line-height: 1.2;
@@ -97,7 +102,8 @@ body {
   overflow: hidden;
 }
 
-.overlay::before {
+.overlay--primary::before,
+.overlay--secondary::before {
   content: "";
   display: block;
   position: absolute;
@@ -139,7 +145,6 @@ body {
 .card-highlight__title {
   margin: 0;
   color: #fff;
-  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 2.25rem;
   line-height: 1.2;
@@ -198,7 +203,6 @@ body {
 
 .card__title {
   margin: 0;
-  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.2;
