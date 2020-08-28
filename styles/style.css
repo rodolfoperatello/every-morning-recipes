@@ -14,7 +14,14 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #e5e5e5;
+  background-color: #e1e1cf;
+  font-family: "Cabin", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
 }
 
 .wrapper {
@@ -37,7 +44,6 @@ body {
   margin: 0;
   color: #fff;
   width: 14.5625rem;
-  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 3rem;
   line-height: 1.2;
@@ -52,7 +58,6 @@ body {
 
 .social-media__text {
   margin: 0 1.125rem 0 0.1875rem;
-  font-family: "Cabin", sans-serif;
   font-size: 1rem;
   line-height: 1.2;
   letter-spacing: 0.1em;
@@ -76,4 +81,130 @@ body {
 
 .social-media-list__img {
   width: 100%;
+}
+
+.card-highlight-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(485px, 1fr));
+  grid-gap: 1.875rem;
+  margin-top: 1.5rem;
+}
+
+.card-highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 30vh;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay--primary::before,
+.overlay--secondary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.overlay--primary::before {
+  background-color: #d7d762;
+}
+
+.overlay--secondary::before {
+  background-color: #b9523b;
+}
+
+.card-highlight__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.card-highlight__info {
+  z-index: 2;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.card-highlight__title {
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.author__img {
+  width: 3.125rem;
+  border-radius: 50%;
+}
+
+.author__name {
+  font-style: italic;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-left: 0.6875rem;
+}
+
+.author__name--contrast {
+  color: #fff;
+}
+
+.card-list {
+  margin: 1.625rem 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(485px, 1fr));
+  grid-gap: 1.875rem;
+}
+
+.card {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card__wrapper-img {
+  margin: 0;
+  width: 12.5rem;
+  height: 9.375rem;
+}
+
+.card__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.875rem;
+  width: 100%;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
