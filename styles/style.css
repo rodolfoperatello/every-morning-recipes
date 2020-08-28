@@ -140,6 +140,7 @@ h3 {
 
 .author {
   display: flex;
+  align-items: center;
 }
 
 .card-highlight__title {
